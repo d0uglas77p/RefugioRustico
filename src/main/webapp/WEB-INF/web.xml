@@ -5,7 +5,7 @@
          http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="3.0">
 
-    <display-name>Moveis</display-name>
+    <display-name>RefugioRustico</display-name>
 
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>
@@ -29,6 +29,6 @@
 
     <context-param>
         <param-name>primefaces.THEME</param-name>
-        <param-value>arya</param-value>
+        <param-value>saga</param-value>
     </context-param>
 </web-app>

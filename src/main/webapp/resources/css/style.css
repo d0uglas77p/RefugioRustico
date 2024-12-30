@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    height: 900vh;
+}
+
+/* INICIO HEADER */
+.nav{
+    background-color: #483527;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+    border-radius: 0 0 40px 40px;
+}
+
+.img-logo{
+    width: 250px;
+    height: 250px;
+    margin-top: 150px;
+    transition: 0.6s;
+}
+
+.img-logo:hover{
+    transform: scale(1.2);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 28px;
+    font-family: 'Lobster Two', sans-serif;
+    font-weight: 400;
+}
+
+.nav-list a:hover{
+    color: #ccae86;
+}
+
+.nav-list2 {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list2 a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 28px;
+    font-family: 'Lobster Two', sans-serif;
+    font-weight: 400;
+}
+
+.nav-list2 a:hover{
+    color: #ccae86;
+}
+/* FIM HEADER */
+
+/* INICIO MAIN */
+
+.section{
+    width: 100%;
+    display: flex;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 180px;
+    margin-left: 70px;
+}
+
+.main h1{
+    color: #483527;
+    font-size: 74px;
+    font-family: 'Lobster Two', sans-serif;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+.main .btn-orcamento.ui-button {
+    cursor: pointer;
+    background-color: #ccae86;
+    color: #483527;
+    border: 0;
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.6s;
+    margin-left: 280px;
+    margin-top: 40px;
+}
+
+.main .btn-orcamento.ui-button:hover {
+    transform: scale(1.25);
+}
+
+.carousel {
+    width: 400px;
+    height: auto;
+    margin-top: 80px;
+    margin-right: 170px;
+    z-index: 8;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.carousel .ui-carousel-item img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    border: 15px outset #8a5e4c;
+}
+
+.carousel .ui-carousel-item {
+    padding: 20px;
+}
+
+.carousel:hover {
+    transform: scale(1.1);
+}
+
+.carousel .ui-carousel-indicator {
+    display: none;
+}
+
+.ui-carousel .ui-carousel-prev,
+.ui-carousel .ui-carousel-next {
+    display: none !important;
+}
+
+.fundo-inicio {
+    position: absolute;
+    background-color: #483527;
+    height: 200px;
+    width: 100%;
+    top: 520px;
+    z-index: 1;
+}
+
+.fundo-inicio p{
+    font-size: 24px;
+    font-family: 'Lobster Two', sans-serif;
+    font-style: italic;
+    color: white;
+    margin-top: 70px;
+    margin-left: -690px;
+    text-align: center
+}
+/* FIM MAIN */
+
+/* INICIO BANNER */
+.carouselBanner {
+    position: relative;
+    margin-top: 320px;
+    left: 50%;
+    width: 92%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselBanner .ui-carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carouselBanner .ui-carousel-item {
+    padding: 20px;
+}
+
+.carouselBanner .ui-carousel-indicator {
+    display: none;
+}
+
+.ui-carouselBanner .ui-carousel-prev,
+.ui-carouselbanner .ui-carousel-next {
+    display: none !important;
+}
+/* FIM BANNER */
+
+/* INICIO RESPONSIVIDADE */
+
+@media (max-width: 1350px) {
+    .fundo-inicio p{
+        margin-left: -500px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: auto;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .main h1 {
+        margin-left: -70px;
+    }
+
+    .main .btn-orcamento.ui-button {
+        margin-left: -75px;
+    }
+
+    .carousel {
+        margin: 0;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .fundo-inicio {
+        top: 1020px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fundo-inicio p{
+        margin-top: 0;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    @media (max-width: 900px) {
+        .img-logo{
+            margin-top: 300px;
+            position: absolute;
+        }
+
+        .main {
+            width: auto;
+            align-items: center;
+            margin-top: 200px;
+        }
+
+        .carousel{
+            margin-button: 500px;
+        }
+
+        .fundo-inicio {
+            top: 1050px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+

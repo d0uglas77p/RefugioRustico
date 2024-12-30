@@ -52,20 +52,18 @@
 
     <!-- INICIO MAIN-->
     <h:form>
-        <section id="inicio" class="section">
+        <section class="section">
             <div class="main">
                 <h1>Refúgio Rústico</h1>
                 <p:button styleClass="btn-orcamento" value="Orçamento"/>
             </div>
 
             <div>
-                <h:form>
-                    <p:carousel value="#{carrosselBean.listaImagens}" var="imagem" class="carousel"
-                                circular="true" autoplayInterval="5000" numVisible="1" numScroll="1"
-                                responsive="true" breakPoint="9400">
-                        <p:graphicImage value="#{imagem}" alt="Imagem"/>
-                    </p:carousel>
-                </h:form>
+                <p:carousel value="#{carrosselBean.listaImagens}" var="imagem" class="carousel"
+                            circular="true" autoplayInterval="5000" numVisible="1" numScroll="1"
+                            responsive="true" breakPoint="9400">
+                    <p:graphicImage value="#{imagem}" alt="Imagem"/>
+                </p:carousel>
             </div>
 
             <div class="fundo-inicio">
@@ -73,17 +71,17 @@
                     com garantia de qualidade e durabilidade.</p>
             </div>
         </section>
+        <!-- FIM MAIN-->
 
-        <section>
-            <h:form>
+        <section class="section2">
+            <div>
                 <p:carousel value="#{carrosselBannerBean.listaBanner}" var="banner" class="carouselBanner"
                             circular="true" autoplayInterval="6000" numVisible="1" numScroll="1"
                             responsive="true" breakPoint="9400">
                     <p:graphicImage value="#{banner}" alt="Banner"/>
                 </p:carousel>
-            </h:form>
+            </div>
         </section>
     </h:form>
-    <!-- INICIO MAIN-->
 </h:body>
 </html>

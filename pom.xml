@@ -56,12 +56,10 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.0</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version> <!-- Verifique se essa é a versão mais recente -->
             </plugin>
+
         </plugins>
     </build>
 </project>

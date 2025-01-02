@@ -12,7 +12,7 @@ public class CarrosselBannerBean {
 
     public CarrosselBannerBean() {
         listaBanner = new ArrayList<>();
-        listaBanner.add("/resources/images/banner1.png");
+        listaBanner.add("/resources/images/banner.png");
         listaBanner.add("/resources/images/banner2.png");
     }
 

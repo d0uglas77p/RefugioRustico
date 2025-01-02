@@ -101,7 +101,7 @@ html{
     background-color: #ccae86;
     color: #483527;
     border: 0;
-    padding: 8px;
+    padding: 4px;
     border-radius: 50px;
     font-size: 18px;
     font-weight: bold;
@@ -125,7 +125,6 @@ html{
 }
 
 .carousel .ui-carousel-item img {
-    cursor: pointer;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -178,11 +177,10 @@ html{
 
 .carouselBanner {
     position: relative;
-    margin-top: 320px;
+    top: 235px;
     left: 50%;
     width: 100%;
-    height: 600px;
-    z-index: 8;
+    height: auto;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
@@ -191,7 +189,7 @@ html{
 
 .carouselBanner .ui-carousel-item img {
     width: 100%;
-    height: 450px;
+    height: auto;
     object-fit: contain;
 }
 
@@ -208,6 +206,162 @@ html{
     display: none !important;
 }
 /* FIM BANNER */
+
+/* INICIO CATEGORIA */
+.section{
+    width: 100%;
+    display: flex;
+}
+
+.div-categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+.div-rustico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.div-rustico:hover{
+    transform: scale(1.1);
+}
+
+.div-sobmedida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.div-sobmedida:hover{
+    transform: scale(1.1);
+}
+
+.img-categoria{
+    width: 430px;
+    height: 530px;
+}
+
+.fundo-categoria {
+    background-color: #483527;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fundo-categoria h2 {
+    margin: 0;
+    font-family: 'Lobster Two', sans-serif;
+    color: #ccae86;
+    font-size: 28px;
+}
+
+.div-categoria2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.div-decoracao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.div-decoracao:hover{
+    transform: scale(1.1);
+}
+
+.div-descanso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.div-descanso:hover{
+    transform: scale(1.1);
+}
+
+.img-categoria2{
+    width: 650px;
+    height: 400px;
+}
+
+.fundo-categoria2 {
+    background-color: #483527;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fundo-categoria2 h2 {
+    margin: 0;
+    font-family: 'Lobster Two', sans-serif;
+    color: #ccae86;
+    font-size: 28px;
+}
+
+.fundo-btn-moveis{
+    background-color: #483527;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fundo-h1 {
+    margin: 0;
+    font-family: 'Lobster Two', sans-serif;
+    color: #ccae86;
+    font-size: 30px;
+}
+
+.btn-moveis.ui-button {
+    cursor: pointer;
+    background-color: #ccae86;
+    color: #483527 !important;
+    border: 0;
+    padding: 4px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.6s;
+    margin-top: 15px;
+}
+
+.btn-moveis.ui-button:hover {
+    transform: scale(1.25);
+    background-color: #ccae86 !important; /* Cor de destaque no hover */
+}
+
+
+
+/* FIM CATEGORIA */
+
 
 /* INICIO RESPONSIVIDADE */
 @media (max-width: 1350px) {
@@ -227,25 +381,27 @@ html{
     .main {
         width: auto;
         align-items: center;
-        margin-top: 150px;
+        margin-top: 110px;
     }
 
     .main h1 {
         margin-left: -70px;
+        margin-top: -05px;
     }
 
     .main .btn-orcamento.ui-button {
         margin-left: -75px;
+        margin-top: 20px;
     }
 
     .carousel {
         margin: 0;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-right: 0;
     }
 
     .fundo-inicio {
-        top: 1020px;
+        top: 890px;
         height: 150px;
         display: flex;
         justify-content: center;
@@ -256,12 +412,6 @@ html{
         margin-top: 0;
         text-align: center;
         margin-left: 0;
-    }
-
-    .carouselBanner {
-        margin: 0;
-        margin-top: 435px;
-        margin-right: 0;
     }
 }
 
@@ -275,14 +425,14 @@ html{
 
 @media (max-width: 900px) {
     .img-logo{
-        margin-top: 300px;
+        margin-top: 270px;
         position: absolute;
     }
 
     .main {
         width: auto;
         align-items: center;
-        margin-top: 200px;
+        margin-top: 190px;
     }
 
     .carousel{
@@ -290,7 +440,7 @@ html{
     }
 
     .fundo-inicio {
-        top: 1050px;
+        top: 970px;
         height: 150px;
         display: flex;
         justify-content: center;
@@ -304,28 +454,106 @@ html{
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1620px) {
     .carouselBanner {
         margin: 0;
-        margin-top: 300px;
+        top: 200px;
         margin-right: 0;
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 1520px) {
     .carouselBanner {
         margin: 0;
-        margin-top: 280px;
+        top: 200px;
         margin-right: 0;
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1420px) {
     .carouselBanner {
         margin: 0;
-        margin-top: 250px;
+        top: 180px;
         margin-right: 0;
     }
 }
 
+@media (max-width: 1300px) {
+    .carouselBanner {
+        margin: 0;
+        top: 280px;
+        margin-right: 0;
+    }
+}
 
+@media (max-width: 1200px) {
+    .carouselBanner {
+        margin: 0;
+        top: 270px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .carouselBanner {
+        margin: 0;
+        top: 260px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .carouselBanner {
+        margin: 0;
+        top: 250px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .carouselBanner {
+        margin: 0;
+        top: 240px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .carouselBanner {
+        margin: 0;
+        top: 230px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .carouselBanner {
+        margin: 0;
+        top: 220px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .carouselBanner {
+        margin: 0;
+        top: 210px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .carouselBanner {
+        margin: 0;
+        top: 200px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .carouselBanner {
+        margin: 0;
+        top: 190px;
+        margin-right: 0;
+    }
+}

@@ -73,6 +73,7 @@
         </section>
         <!-- FIM MAIN-->
 
+        <!-- INICIO BANNER-->
         <section class="section2">
             <div>
                 <p:carousel value="#{carrosselBannerBean.listaBanner}" var="banner" class="carouselBanner"
@@ -82,6 +83,48 @@
                 </p:carousel>
             </div>
         </section>
+        <!-- FIM BANNER-->
+
+        <!-- INICIO CATEGORIAS -->
+        <section class="section3">
+            <div class="div-categoria">
+                <div class="div-rustico">
+                    <p:graphicImage class="img-categoria" name="images/rustico.png" alt="Rústico"/>
+                    <div class="fundo-categoria">
+                        <h2>Rústico</h2>
+                    </div>
+                </div>
+
+                <div class="div-sobmedida">
+                    <p:graphicImage class="img-categoria" name="images/sobmedida.png" alt="Sob medida"/>
+                    <div class="fundo-categoria">
+                        <h2>Sob medida</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-categoria2">
+                <div class="div-decoracao">
+                    <p:graphicImage class="img-categoria2" name="images/decoracao.png" alt="Decoração"/>
+                    <div class="fundo-categoria2">
+                        <h2>Decoração</h2>
+                    </div>
+                </div>
+
+                <div class="div-descanso">
+                    <p:graphicImage class="img-categoria2" name="images/descanso.png" alt="Descanso"/>
+                    <div class="fundo-categoria2">
+                        <h2>Descanso</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fundo-btn-moveis">
+                <h1 class="fundo-h1">Acesse nossa página de móveis e entre em contato para agendar um orçamento personalizado!</h1>
+                <p:button class="btn-moveis" value="Móveis"/>
+            </div>
+        </section>
     </h:form>
+    <!-- INICIO MAIN-->
 </h:body>
 </html>

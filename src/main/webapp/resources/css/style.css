@@ -208,9 +208,8 @@ html{
 /* FIM BANNER */
 
 /* INICIO CATEGORIA */
-.section{
+.section3{
     width: 100%;
-    display: flex;
 }
 
 .div-categoria {
@@ -263,7 +262,7 @@ html{
 .fundo-categoria h2 {
     margin: 0;
     font-family: 'Lobster Two', sans-serif;
-    color: #ccae86;
+    color: white;
     font-size: 28px;
 }
 
@@ -317,7 +316,7 @@ html{
 .fundo-categoria2 h2 {
     margin: 0;
     font-family: 'Lobster Two', sans-serif;
-    color: #ccae86;
+    color: white;
     font-size: 28px;
 }
 
@@ -336,8 +335,8 @@ html{
 .fundo-h1 {
     margin: 0;
     font-family: 'Lobster Two', sans-serif;
-    color: #ccae86;
-    font-size: 30px;
+    color: white;
+    font-size: 26px;
 }
 
 .btn-moveis.ui-button {
@@ -357,11 +356,68 @@ html{
     transform: scale(1.25);
     background-color: #ccae86 !important; /* Cor de destaque no hover */
 }
-
-
-
 /* FIM CATEGORIA */
 
+/* INICIO SOBRE */
+.section4 {
+    width: 100%;
+    display: flex;
+}
+
+.img-gif {
+    margin: 0;
+    width: 450px;
+    height: 150px;
+}
+
+.conteiner-video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-button: -10px
+}
+
+.div-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+}
+
+.fundo-sobre {
+    background-color: #483527;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+.titulo-h2 {
+    color: white;
+    font-size: 26px;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.paragrafo {
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* FIM SOBRE */
 
 /* INICIO RESPONSIVIDADE */
 @media (max-width: 1350px) {
@@ -555,5 +611,86 @@ html{
         margin: 0;
         top: 190px;
         margin-right: 0;
+    }
+}
+
+@media(max-width: 1470px) {
+    .img-categoria {
+       width: 400px;
+       height: 500px;
+    }
+
+    .img-categoria2 {
+       width: 600px;
+       height: 380px;
+    }
+}
+
+@media(max-width: 1360px) {
+    .img-categoria2 {
+       width: 570px;
+       height: 350px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .div-categoria {
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .img-categoria{
+        width: 550px;
+        height: 600px;
+    }
+
+    .div-categoria2 {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .img-categoria2{
+        width: 850px;
+        height: 480px;
+    }
+
+    .btn-moveis.ui-button {
+        padding: 3px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .img-categoria2 {
+       width: 550px;
+       height: 350px;
+    }
+}
+
+@media (max-width: 720px) {
+    .img-categoria{
+        width: 450px;
+        height: 500px;
+    }
+
+    .img-categoria2 {
+       width: 450px;
+       height: 250px;
+    }
+}
+
+@media (max-width: 540px) {
+    .img-categoria{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .div-video {
+        flex-direction: column;
+        margin-top: -10px;
     }
 }

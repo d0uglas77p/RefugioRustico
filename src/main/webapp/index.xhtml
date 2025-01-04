@@ -24,24 +24,24 @@
 </h:head>
 
 <h:body>
+    <h:form>
     <!-- CONTATO FIXO -->
-    <div class="fixed">
-        <p:graphicImage
-                name="images/wpp-fixed.png"
-                alt="Contato WhatsApp"
-                class="wppContato"
-                onclick="window.open('https://wa.me/5511990144630', '_blank'); return false;"/>
+        <div class="fixed">
+            <p:graphicImage
+                    name="images/wpp-fixed.png"
+                    alt="Contato WhatsApp"
+                    class="wppContato"
+                    onclick="window.open('https://wa.me/5511990144630', '_blank'); return false;"/>
 
-        <p:graphicImage
-                name="images/insta-fixed.png"
-                alt="Contato Instagram"
-                class="instaContato"
-                onclick="window.open('https://www.instagram.com/refugiiorustico/', '_blank'); return false;"/>
-    </div>
+            <p:graphicImage
+                    name="images/insta-fixed.png"
+                    alt="Contato Instagram"
+                    class="instaContato"
+                    onclick="window.open('https://www.instagram.com/refugiiorustico/', '_blank'); return false;"/>
+        </div>
     <!-- CONTATO FIXO -->
 
     <!-- INICIO HEADER -->
-    <h:form>
         <nav class="nav">
             <ul class="nav-list">
                 <li>
@@ -63,11 +63,9 @@
                 </li>
             </ul>
         </nav>
-    </h:form>
     <!-- FIM HEADER -->
 
     <!-- INICIO MAIN-->
-    <h:form>
         <section class="section">
             <div class="main">
                 <h1>Refúgio Rústico</h1>
@@ -90,18 +88,6 @@
             </div>
         </section>
         <!-- FIM MAIN-->
-
-        <!-- INICIO BANNER-->
-        <section class="section2">
-            <div>
-                <p:carousel value="#{carrosselBannerBean.listaBanner}" var="banner" class="carouselBanner"
-                            circular="true" autoplayInterval="6000" numVisible="1" numScroll="1"
-                            responsive="true" breakPoint="9400">
-                    <p:graphicImage value="#{banner}" alt="Banner"/>
-                </p:carousel>
-            </div>
-        </section>
-        <!-- FIM BANNER-->
 
         <!-- INICIO CATEGORIAS -->
         <section class="section3">
@@ -251,6 +237,5 @@
         </section>
         <!-- FIM RODAPE -->
     </h:form>
-    <!-- INICIO MAIN-->
 </h:body>
 </html>

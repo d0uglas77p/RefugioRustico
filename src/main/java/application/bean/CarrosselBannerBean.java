@@ -1,4 +1,4 @@
-package aplication.bean;
+package application.bean;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;

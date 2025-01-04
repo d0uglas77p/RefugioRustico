@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
       lang="pt-br"
       xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,7 +25,6 @@
 </h:head>
 
 <h:body>
-    <h:form>
     <!-- CONTATO FIXO -->
         <div class="fixed">
             <p:graphicImage
@@ -65,37 +65,28 @@
             </ul>
         </nav>
     <!-- FIM HEADER -->
+<br></br>
+<br></br>
+<br></br>
+        <!-- INICIO CATALAGO -->
+        <div>
+            <h:form id="form">
+                <p:dataView var="product" value="#{productBean.products}" rows="5" paginator="true"
+                            paginatorTemplate="{PreviousPageLink} {PageLinks} {NextPageLink}" layout="grid">
 
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+                    <p:dataViewGridItem>
+                        <div>
+                            <div>
+                                <p:graphicImage name="images/catalago/#{product.imageName}" library=""/>
+                                <div>#{product.name}</div>
+                                <div>#{product.preco}</div>
+                            </div>
+                        </div>
+                    </p:dataViewGridItem>
+                </p:dataView>
+            </h:form>
+        </div>
+        <!-- FIM CATALAGO -->
 
     <!-- INICIO RODAPE -->
         <section id="contato" class="section6">
@@ -137,6 +128,5 @@
             </footer>
         </section>
         <!-- FIM RODAPE -->
-    </h:form>
 </h:body>
 </html>

@@ -168,7 +168,7 @@ html{
 }
 
 .carousel:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .carousel .ui-carousel-indicator {
@@ -993,4 +993,10 @@ html{
     .fundo-btn-moveis{
         height: 160px;
     }
+}
+
+/* ------------- PAGINA DE MÓVEIS ------------- */
+
+.ui-dataview .ui-button {
+    display: none !important;
 }

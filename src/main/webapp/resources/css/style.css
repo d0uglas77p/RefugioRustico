@@ -25,15 +25,15 @@ html{
 }
 
 .wppContato {
-    width: 100px;
+    width: 80px;
     height: auto;
     cursor: pointer;
     transition: filter 0.4s ease, transform 0.4s ease;
 }
 
 .instaContato {
-    width: 74px;
-    height: 74x;
+    width: 54px;
+    height: 54x;
     cursor: pointer;
     transition: filter 0.4s ease, transform 0.4s ease;
 }
@@ -789,4 +789,180 @@ html{
         height: auto;
         cursor: pointer;
     }
+}
+
+@media (max-width: 520px) {
+    .nav-list a{
+        padding: 15px;
+        font-size: 28px;
+    }
+
+    .nav-list2 a{
+        padding: 15px;
+        font-size: 28px;
+    }
+
+    .img-logo{
+        width: 200px;
+        height: 200px;
+        margin-top: 230px;
+    }
+
+    .main{
+        align-items: center;
+        text-align: center;
+        margin-top: 145px;
+    }
+
+    .main h1{
+        font-size: 50px;
+    }
+
+    .main .btn-orcamento.ui-button {
+        padding: 4px;
+        font-size: 18px;
+        transition: 0.6s;
+        margin-top: 20px;
+    }
+
+    .carousel {
+        width: 320px;
+        margin-top: 15px;
+    }
+
+    .fundo-inicio {
+        top: 780px;
+    }
+
+    .fundo-inicio p{
+        font-size: 22px;
+        margin: 5px;
+    }
+
+    .div-categoria {
+        gap: 10;
+    }
+
+    .img-categoria2{
+        width: 300px;
+        height: 200px;
+    }
+
+    .fundo-btn-moveis{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .fundo-h1 {
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .btn-moveis.ui-button {
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .img-gif {
+        width: 300px;
+        height: 100px;
+    }
+
+    .titulo-h2 {
+        font-size: 20px;
+    }
+
+    .paragrafo {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .fundo-diferente-h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .p-diferencial {
+        margin: 20px;
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    .p-diferencial::before {
+        font-size: 28px;
+    }
+
+    .fundo-contato {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .div-contato {
+        margin-top: 15px;
+    }
+
+    .img-whatsapp {
+        width: 45px;
+        margin-right: 40px;
+    }
+
+    .img-instagram  {
+        width: 50px;
+    }
+
+    .logo-rodape {
+        width: 250px;
+    }
+
+    .mycoding-rodape {
+        width: 300px;
+    }
+
+    .p-direitos {
+        color: white;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .fixed {
+        gap: 5px;
+        z-index: 1000;
+    }
+
+    .wppContato {
+        width: 50px;
+    }
+
+    .instaContato {
+        width: 36px;
+        height: 36x;
+    }
+}
+
+@media (max-width: 370px) {
+    .nav-list a{
+        padding: 8px;
+        font-size: 24px;
+    }
+
+    .nav-list2 a{
+        padding: 8px;
+        font-size: 24px;
+    }
+
+    .fundo-sobre {
+        padding: 15px;
+        margin-left: 10%
+        margin-right: 10%
+    }
+
+    .titulo-h2 {
+        font-size: 18px;
+    }
+
+    .paragrafo {
+        font-size: 12px;
+        padding: 16px;
+    }
+
 }

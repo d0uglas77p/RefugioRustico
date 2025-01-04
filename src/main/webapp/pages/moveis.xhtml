@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      lang="pt-br"
+      xmlns="http://www.w3.org/1999/xhtml">
+
+<h:head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+          rel="stylesheet"/>
+
+    <!-- CSS do projeto -->
+    <h:outputStylesheet library="css" name="style.css"/>
+
+    <title>Refúgio Rústico - Móveis</title>
+</h:head>
+
+<h:body>
+    <!-- CONTATO FIXO -->
+    <div class="fixed">
+        <p:graphicImage
+                name="images/wpp-fixed.png"
+                alt="Contato WhatsApp"
+                class="wppContato"
+                onclick="window.open('https://wa.me/5511990144630', '_blank'); return false;"/>
+
+        <p:graphicImage
+                name="images/insta-fixed.png"
+                alt="Contato Instagram"
+                class="instaContato"
+                onclick="window.open('https://www.instagram.com/refugiiorustico/', '_blank'); return false;"/>
+    </div>
+    <!-- CONTATO FIXO -->
+
+
+    <!-- INICIO HEADER -->
+    <h:form>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.xhtml" target="_blank">Início</a>
+                </li>
+                <li>
+                    <a href="#" onclick="window.location.reload();">Móveis</a>
+                </li>
+            </ul>
+
+            <p:graphicImage class="img-logo" name="images/logo.png" alt="Logo"/>
+
+            <ul class="nav-list2">
+                <li>
+                    <a>Sobre*</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </h:form>
+    <!-- FIM HEADER -->
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <!-- INICIO RODAPE -->
+    <section id="contato" class="section6">
+        <footer>
+            <div class="fundo-contato">
+                <div>
+                    <h2 class="fundo-contato-h2">Saiba um pouco mais sobre a Refúgio Rústico. Veja nossos produtos ou fale conosco!</h2>
+                </div>
+
+                <div class="div-contato">
+                    <p:commandLink
+                            style="text-decoration: none;"
+                            onclick="window.open('https://wa.me/5511990144630', '_blank'); return false;">
+                        <p:graphicImage name="images/whatsapp.png" class="img-whatsapp" />
+                    </p:commandLink>
+
+                    <p:commandLink
+                            style="text-decoration: none;"
+                            onclick="window.open('https://www.instagram.com/refugiiorustico/', '_blank'); return false;">
+                        <p:graphicImage name="images/instagram.png" class="img-instagram" />
+                    </p:commandLink>
+                </div>
+            </div>
+
+            <div class="conteiner-rodape">
+                <div class="div-rodape">
+                    <p:graphicImage name="images/logo.png" class="logo-rodape"/>
+
+                    <p:commandLink
+                            onclick="window.open('https://mycodinghub.tech/', '_blank'); return false;">
+                        <p:graphicImage name="images/mycoding.png" class="mycoding-rodape"/>
+                    </p:commandLink>
+                </div>
+                <div class="div-direito">
+                    <p class="p-direitos">© Refúgio Rústico. Todos os direitos reservados.</p>
+                </div>
+
+            </div>
+        </footer>
+    </section>
+    <!-- FIM RODAPE -->
+</h:body>
+</html>

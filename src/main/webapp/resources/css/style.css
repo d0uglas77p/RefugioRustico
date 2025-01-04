@@ -9,8 +9,39 @@ body{
 }
 
 html{
-    height: 900vh;
+    scroll-behavior: smooth;
 }
+
+/* CONTATO FIXO */
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.wppContato {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.instaContato {
+    width: 74px;
+    height: 74x;
+    cursor: pointer;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.wppContato:hover, .instaContato:hover {
+    filter: brightness(0.5);
+}
+/* CONTATO FIXO */
 
 /* INICIO HEADER */
 .nav{
@@ -217,7 +248,7 @@ html{
     justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .div-rustico {
@@ -462,6 +493,103 @@ html{
     transform: translateY(-50%);
 }
 /* FIM DIFERENCIAL */
+
+/* INICIO RODAPE */
+.section6 {
+    width: 100%;
+}
+
+.fundo-contato {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.fundo-diferente-h2 {
+    margin: 0;
+    color: white;
+    font-size: 26px;
+    padding: 25px;
+    font-size: 30px;
+}
+
+.fundo-contato-h2 {
+    color: black;
+}
+
+.div-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.img-whatsapp {
+    width: 70px;
+    height: auto;
+    transition: filter 0.3s ease;
+    margin-right: 40px;
+}
+
+.img-whatsapp:hover {
+    filter: brightness(0.5);
+}
+
+.img-instagram  {
+    width: 75px;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+.img-instagram:hover {
+    filter: brightness(0.5);
+}
+
+.conteiner-rodape {
+    background-color: #483527;
+    width: 100%;
+    height: 450px;
+    margin-top: 20px;
+}
+
+.div-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-rodape {
+    width: 400px;
+    height: auto;
+    margin-right: 300px;
+}
+
+.mycoding-rodape {
+    width: 450px;
+    height: auto;
+    cursor: pointer;
+}
+
+.div-direito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.p-direitos {
+    color: white;
+    font-size: 24px;
+}
+/* FIM RODAPE */
 
 /* INICIO RESPONSIVIDADE */
 @media (max-width: 1350px) {
@@ -711,6 +839,10 @@ html{
        width: 550px;
        height: 350px;
     }
+
+    .btn-moveis.ui-button {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -722,6 +854,10 @@ html{
     .img-categoria2 {
        width: 450px;
        height: 250px;
+    }
+
+    .btn-moveis.ui-button {
+        margin-top: 10px;
     }
 }
 
@@ -760,11 +896,53 @@ html{
         padding: 0;
         margin-top: 20px;
         font-size: 32px;
-        border-bottom: 3px dashed #ccae86;
-        padding-bottom: 10px;
+        border-bottom: 3px solid white;
+        padding-bottom: 20px;
     }
 
     .p-diferencial {
         font-size: 24px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .logo-rodape {
+        width: 400px;
+        height: auto;
+        margin-right: 200px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .logo-rodape {
+        width: 400px;
+        height: auto;
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 950px) {
+    .logo-rodape {
+        width: 400px;
+        height: auto;
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 900px) {
+    .div-rodape {
+        flex-direction: column;
+    }
+
+    .logo-rodape {
+        width: 280px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .mycoding-rodape {
+        width: 400px;
+        height: auto;
+        cursor: pointer;
     }
 }

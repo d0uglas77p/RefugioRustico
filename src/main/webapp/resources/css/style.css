@@ -353,12 +353,6 @@ html{
     display: flex;
 }
 
-.img-gif {
-    margin: 0;
-    width: 450px;
-    height: 150px;
-}
-
 .conteiner-video{
     width: 100%;
     height: auto;
@@ -997,6 +991,106 @@ html{
 
 /* ------------- PAGINA DE MÓVEIS ------------- */
 
+.fundo-titulo{
+    width: 100%;
+    height: 50px;
+    background-color: #483527;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Esconde os botões de navegação do paginator */
 .ui-dataview .ui-button {
     display: none !important;
+}
+
+/* Centraliza o contêiner do p:dataView (a grade) */
+.data-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza os itens da visualização de dados */
+.data-view .ui-dataview-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+/* Estilo das imagens dentro de cada item de visualização */
+.data-view .ui-dataview-item img {
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 24px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de zoom ao passar o mouse sobre a imagem */
+.data-view .ui-dataview-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Adiciona um espaço entre o último div (preço) e o paginator */
+.ui-dataview-item div:last-child {
+    margin-bottom: 10px;
+}
+
+/* Estilo geral do paginator */
+.ui-paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo dos links de páginas dentro do paginator */
+.ui-paginator .ui-paginator-pages {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo dos botões "Previous" e "Next" no paginator */
+.ui-paginator .ui-paginator-prev,
+.ui-paginator .ui-paginator-next {
+    font-size: 28px;
+    color: black !important;
+}
+
+/* Estilo dos links de páginas padrão (não ativos) no paginator */
+.ui-paginator .ui-paginator-pages .ui-state-default {
+    font-size: 18px;
+    color: black !important;
+}
+
+/* Estilo da página ativa no paginator */
+.ui-paginator .ui-paginator-pages .ui-state-active {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+/* Estilo do nome da variedade (primeiro div dentro de cada item) */
+.data-view .ui-dataview-item div:first-of-type {
+    font-size: 22px;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Estilo do preço da variedade (segundo div dentro de cada item) */
+.data-view .ui-dataview-item div:nth-of-type(2) {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
 }

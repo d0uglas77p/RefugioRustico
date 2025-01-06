@@ -3,6 +3,7 @@ package application.model;
 import javax.faces.bean.ManagedBean;
 import javax.faces.view.ViewScoped;
 import java.io.Serializable;
+import java.text.DecimalFormat;
 
 @ManagedBean
 @ViewScoped
@@ -36,9 +37,9 @@ public class Cadeiras implements Serializable {
         this.imageName = imageName;
     }
 
-    public double getPreco() {
-        return
-                preco;
+    public String getPreco() {
+        DecimalFormat df = new DecimalFormat("###,##0.00");
+        return df.format(preco);
     }
 
     public void setPreco(double preco) {

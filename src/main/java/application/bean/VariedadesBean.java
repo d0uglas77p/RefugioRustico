@@ -1,6 +1,5 @@
 package application.bean;
 
-import application.model.Product;
 import application.model.Variedades;
 
 import javax.faces.bean.ManagedBean;

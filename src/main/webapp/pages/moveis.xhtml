@@ -78,22 +78,26 @@
         <!-- INICIO CATALAGO -->
         <!-- MESAS -->
         <div>
-            <div class="fundo-titulo">
-                <h2>MESAS</h2>
+            <div>
+                <div class="fundo-titulo">
+                    <h2>MESAS</h2>
+                </div>
             </div>
 
             <div class="data-view">
                 <p:dataView var="mesa" value="#{mesasBean.mesa}" rows="3" paginator="true"
                             paginatorTemplate="{PreviousPageLink} {PageLinks} {NextPageLink}"
                             paginatorPosition="bottom"
-                            layout="grid">
+                            layout="grid" >
 
                     <!-- Item de visualização de dados -->
-                    <p:dataViewGridItem >
+                    <p:dataViewGridItem>
                         <div class="ui-dataview-item">
                             <p:graphicImage library="images" name="catalogo/mesas/#{mesa.imageName}"/>
-                            <div >#{mesa.name}</div>
-                            <div>R$ #{mesa.preco}</div>
+                            <div class="details">
+                                <div class="name">#{mesa.name}</div>
+                                <div class="price">R$ #{mesa.preco}</div>
+                            </div>
                         </div>
                     </p:dataViewGridItem>
 
@@ -115,8 +119,10 @@
                 <p:dataViewGridItem>
                     <div class="ui-dataview-item">
                         <p:graphicImage library="images" name="catalogo/bancos/#{banco.imageName}"/>
-                        <div>#{banco.name}</div>
-                        <div>R$ #{banco.preco}</div>
+                        <div class="details">
+                            <div class="name">#{banco.name}</div>
+                            <div class="price">R$ #{banco.preco}</div>
+                        </div>
                     </div>
                 </p:dataViewGridItem>
             </p:dataView>
@@ -136,8 +142,10 @@
                 <p:dataViewGridItem>
                     <div class="ui-dataview-item">
                         <p:graphicImage library="images" name="catalogo/cristaleiras/#{cristaleira.imageName}"/>
-                        <div>#{cristaleira.name}</div>
-                        <div>R$ #{cristaleira.preco}</div>
+                        <div class="details">
+                            <div class="name">#{cristaleira.name}</div>
+                            <div class="price">R$ #{cristaleira.preco}</div>
+                        </div>
                     </div>
                 </p:dataViewGridItem>
             </p:dataView>
@@ -157,8 +165,10 @@
                 <p:dataViewGridItem>
                     <div class="ui-dataview-item">
                         <p:graphicImage library="images" name="catalogo/aparadores/#{aparador.imageName}"/>
-                        <div>#{aparador.name}</div>
-                        <div>R$ #{aparador.preco}</div>
+                        <div class="details">
+                            <div class="name">#{aparador.name}</div>
+                            <div class="price">R$ #{aparador.preco}</div>
+                        </div>
                     </div>
                 </p:dataViewGridItem>
             </p:dataView>
@@ -178,8 +188,10 @@
                 <p:dataViewGridItem>
                     <div class="ui-dataview-item">
                         <p:graphicImage library="images" name="catalogo/cadeiras/#{cadeira.imageName}"/>
-                        <div>#{cadeira.name}</div>
-                        <div>R$ #{cadeira.preco}</div>
+                        <div class="details">
+                            <div class="name">#{cadeira.name}</div>
+                            <div class="price">R$ #{cadeira.preco}</div>
+                        </div>
                     </div>
                 </p:dataViewGridItem>
             </p:dataView>
@@ -200,8 +212,10 @@
                     <div class="ui-dataview-item">
                         <p:graphicImage library="images" name="catalogo/variedades/#{variedade.imageName}"/>
                         <br></br>
-                        <div>#{variedade.name}</div>
-                        <div>R$ #{variedade.preco}</div>
+                        <div class="details">
+                            <div class="name">#{variedade.name}</div>
+                            <div class="price">R$ #{variedade.preco}</div>
+                        </div>
                     </div>
                 </p:dataViewGridItem>
             </p:dataView>

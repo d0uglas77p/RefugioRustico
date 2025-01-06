@@ -991,6 +991,7 @@ html{
 
 /* ------------- PAGINA DE MÓVEIS ------------- */
 
+/* DATA VIEW */
 .fundo-titulo{
     width: 100%;
     height: 50px;
@@ -1013,6 +1014,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 /* Estiliza os itens da visualização de dados */
@@ -1041,7 +1043,7 @@ html{
 
 /* Efeito de zoom ao passar o mouse sobre a imagem */
 .data-view .ui-dataview-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 /* Adiciona um espaço entre o último div (preço) e o paginator */
@@ -1095,4 +1097,97 @@ html{
     color: black;
     font-weight: bold;
     margin-top: 5px;
+}
+
+.data-view .ui-dataview-item .details .price {
+    color: green;
+}
+/* FIM DATA VIEW */
+
+/* RESPONSIVIDADE */
+@media (max-width: 1450px) {
+    .data-view .ui-dataview-item img {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 1330px) {
+    .data-view .ui-dataview-item img {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .data-view .ui-dataview-item img {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 370px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .data-view .ui-dataview-item img {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .data-view .ui-dataview-item img {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .data-view .ui-dataview-item img {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 310px;
+    }
+}
+
+@media (max-width: 990px) {
+    .data-view {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 36%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .data-view .ui-dataview-item img {
+        max-width: 200%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .data-view .ui-dataview-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .data-view .ui-dataview-item .details {
+        text-align: center;
+        width: 100%;
+    }
+
+    .data-view .ui-dataview-item .details .price {
+        color: green;
+        border-bottom: 2.1px dashed #000;
+        padding-bottom: 6px;
+    }
 }

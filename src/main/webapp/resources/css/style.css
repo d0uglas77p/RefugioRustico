@@ -25,14 +25,14 @@ html{
 }
 
 .wppContato {
-    width: 80px;
+    width: 45px;
     height: auto;
     cursor: pointer;
     transition: filter 0.4s ease, transform 0.4s ease;
 }
 
 .instaContato {
-    width: 54px;
+    width: 45px;
     height: 54x;
     cursor: pointer;
     transition: filter 0.4s ease, transform 0.4s ease;
@@ -483,7 +483,7 @@ html{
 }
 
 .img-whatsapp {
-    width: 70px;
+    width: 45px;
     height: auto;
     transition: filter 0.3s ease;
     margin-right: 40px;
@@ -494,7 +494,7 @@ html{
 }
 
 .img-instagram  {
-    width: 75px;
+    width: 45px;
     height: auto;
     transition: filter 0.3s ease;
 }
@@ -524,7 +524,7 @@ html{
 }
 
 .mycoding-rodape {
-    width: 450px;
+    width: 220px;
     height: auto;
     cursor: pointer;
 }
@@ -600,6 +600,17 @@ html{
 }
 
 @media (max-width: 900px) {
+
+    .div-rodape {
+        flex-direction: row;
+    }
+
+    .logo-rodape {
+        width: 280px;
+        height: auto;
+        margin-right: 0;
+    }
+
     .img-logo{
         margin-top: 270px;
         position: absolute;
@@ -622,6 +633,23 @@ html{
         justify-content: center;
         align-items: center;
     }
+
+    .mycoding-rodape {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+        }
+
+     .img-categoria2 {
+           width: 550px;
+           height: 350px;
+        }
+
+        .btn-moveis.ui-button {
+            margin-top: 10px;
+        }
+
+
 }
 
 @media(max-width: 1470px) {
@@ -669,17 +697,6 @@ html{
         padding: 3px;
         font-size: 16px;
         margin-top: 5px;
-    }
-}
-
-@media (max-width: 900px) {
-    .img-categoria2 {
-       width: 550px;
-       height: 350px;
-    }
-
-    .btn-moveis.ui-button {
-        margin-top: 10px;
     }
 }
 
@@ -783,24 +800,6 @@ html{
         width: 400px;
         height: auto;
         margin-right: 90px;
-    }
-}
-
-@media (max-width: 900px) {
-    .div-rodape {
-        flex-direction: column;
-    }
-
-    .logo-rodape {
-        width: 280px;
-        height: auto;
-        margin-right: 0;
-    }
-
-    .mycoding-rodape {
-        width: 400px;
-        height: auto;
-        cursor: pointer;
     }
 }
 
@@ -926,7 +925,7 @@ html{
     }
 
     .img-instagram  {
-        width: 50px;
+        width: 45px;
     }
 
     .logo-rodape {
@@ -949,11 +948,11 @@ html{
     }
 
     .wppContato {
-        width: 50px;
+        width: 45px;
     }
 
     .instaContato {
-        width: 36px;
+        width: 45px;
         height: 36x;
     }
 }

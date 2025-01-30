@@ -236,9 +236,9 @@ html{
     transform: scale(1.1);
 }
 
-.img-categoria{
-    width: 430px;
-    height: 530px;
+.img-categoria {
+    width: 350px;
+    height: 450px;
 }
 
 .fundo-categoria {
@@ -290,8 +290,8 @@ html{
 }
 
 .img-categoria2{
-    width: 650px;
-    height: 400px;
+    width: 580px;
+    height: 320px;
 }
 
 .fundo-categoria2 {
@@ -506,27 +506,37 @@ html{
 .conteiner-rodape {
     background-color: #483527;
     width: 100%;
-    height: 450px;
+    height: 280px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-rodape {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 60%
 }
 
 .logo-rodape {
-    width: 400px;
+    width: 220px;
     height: auto;
-    margin-right: 300px;
+    padding: 0;
+    margin: 0;
 }
 
 .mycoding-rodape {
-    width: 220px;
+    width: 120px;
     height: auto;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
 }
 
 .div-direito {
@@ -534,11 +544,13 @@ html{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .p-direitos {
     color: white;
-    font-size: 24px;
+    font-size: 16px;
 }
 /* FIM RODAPE */
 
@@ -600,15 +612,8 @@ html{
 }
 
 @media (max-width: 900px) {
-
     .div-rodape {
         flex-direction: row;
-    }
-
-    .logo-rodape {
-        width: 280px;
-        height: auto;
-        margin-right: 0;
     }
 
     .img-logo{
@@ -634,22 +639,14 @@ html{
         align-items: center;
     }
 
-    .mycoding-rodape {
-            width: 200px;
-            height: auto;
-            cursor: pointer;
-        }
+    .img-categoria2 {
+       width: 550px;
+       height: 350px;
+    }
 
-     .img-categoria2 {
-           width: 550px;
-           height: 350px;
-        }
-
-        .btn-moveis.ui-button {
-            margin-top: 10px;
-        }
-
-
+    .btn-moveis.ui-button {
+        margin-top: 10px;
+    }
 }
 
 @media(max-width: 1470px) {
@@ -678,9 +675,9 @@ html{
         gap: 50px;
     }
 
-    .img-categoria{
-        width: 550px;
-        height: 600px;
+    .img-categoria {
+        width: 350px;
+        height: 450px;
     }
 
     .div-categoria2 {
@@ -688,9 +685,9 @@ html{
         gap: 50px;
     }
 
-    .img-categoria2{
-        width: 850px;
-        height: 480px;
+    .img-categoria2 {
+        width: 580px;
+        height: 320px;
     }
 
     .btn-moveis.ui-button {
@@ -701,7 +698,7 @@ html{
 }
 
 @media (max-width: 720px) {
-    .img-categoria{
+    .img-categoria {
         width: 450px;
         height: 500px;
     }
@@ -724,6 +721,17 @@ html{
     .btn-moveis.ui-button {
         font-size: 16px;
     }
+
+    .logo-rodape {
+        width: 200px;
+        height: auto;
+    }
+
+    .mycoding-rodape {
+        width: 100px;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -779,30 +787,6 @@ html{
     }
 }
 
-@media (max-width: 1140px) {
-    .logo-rodape {
-        width: 400px;
-        height: auto;
-        margin-right: 200px;
-    }
-}
-
-@media (max-width: 1040px) {
-    .logo-rodape {
-        width: 400px;
-        height: auto;
-        margin-right: 150px;
-    }
-}
-
-@media (max-width: 950px) {
-    .logo-rodape {
-        width: 400px;
-        height: auto;
-        margin-right: 90px;
-    }
-}
-
 @media (max-width: 520px) {
     .nav-list a{
         padding: 15px;
@@ -814,7 +798,7 @@ html{
         font-size: 28px;
     }
 
-    .img-logo{
+    .img-logo {
         width: 200px;
         height: 200px;
         margin-top: 230px;
@@ -929,17 +913,13 @@ html{
     }
 
     .logo-rodape {
-        width: 250px;
+        width: 200px;
+        height: auto;
     }
 
     .mycoding-rodape {
-        width: 300px;
-    }
-
-    .p-direitos {
-        color: white;
-        font-size: 20px;
-        margin-top: 40px;
+        width: 100px;
+        height: auto;
     }
 
     .fixed {
@@ -958,7 +938,7 @@ html{
 }
 
 @media (max-width: 370px) {
-    .nav-list a{
+    .nav-list a {
         padding: 8px;
         font-size: 24px;
     }
@@ -986,12 +966,43 @@ html{
     .fundo-btn-moveis{
         height: 160px;
     }
+
+    .div-rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 00;
+        width: 100%
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-rodape {
+        width: 140px;
+        height: auto;
+    }
+
+    .mycoding-rodape {
+        width: 70px;
+        height: auto;
+    }
+
+    .conteiner-rodape {
+        height: 200px;
+    }
 }
 
 /* ------------- PAGINA DE MÓVEIS ------------- */
 
-/* DATA VIEW */
-.fundo-titulo{
+/*  */
+
+.section-mesa {
+    margin-top: 10px;
+}
+
+.fundo-titulo {
     width: 100%;
     height: 50px;
     background-color: #483527;
@@ -1000,193 +1011,162 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 8px;
 }
 
-/* Esconde os botões de navegação do paginator */
-.ui-dataview .ui-button {
-    display: none !important;
-}
-
-/* Centraliza o contêiner do p:dataView (a grade) */
-.data-view {
+.div-conteiner-carousel {
+    width: 100%;
     display: flex;
+}
+
+.carousel-container {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.carousel-container .ui-carousel-item img {
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.carousel-container .ui-carousel-item {
+    padding: 10px;
+}
+
+.div-produto {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-/* Estiliza os itens da visualização de dados */
-.data-view .ui-dataview-item {
+.div-descricao {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: auto;
+    margin-top: 10px;
 }
 
-/* Estilo das imagens dentro de cada item de visualização */
-.data-view .ui-dataview-item img {
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 24px;
-    border-radius: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    cursor: pointer;
-    height: 450px;
-    width: auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Efeito de zoom ao passar o mouse sobre a imagem */
-.data-view .ui-dataview-item img:hover {
-    transform: scale(1.08);
-}
-
-/* Adiciona um espaço entre o último div (preço) e o paginator */
-.ui-dataview-item div:last-child {
-    margin-bottom: 10px;
-}
-
-/* Estilo geral do paginator */
-.ui-paginator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilo dos links de páginas dentro do paginator */
-.ui-paginator .ui-paginator-pages {
-    display: flex;
-    justify-content: center;
-}
-
-/* Estilo dos botões "Previous" e "Next" no paginator */
-.ui-paginator .ui-paginator-prev,
-.ui-paginator .ui-paginator-next {
-    font-size: 28px;
-    color: black !important;
-}
-
-/* Estilo dos links de páginas padrão (não ativos) no paginator */
-.ui-paginator .ui-paginator-pages .ui-state-default {
-    font-size: 18px;
-    color: black !important;
-}
-
-/* Estilo da página ativa no paginator */
-.ui-paginator .ui-paginator-pages .ui-state-active {
-    background-color: #007bff !important;
-    color: white !important;
-}
-
-/* Estilo do nome da variedade (primeiro div dentro de cada item) */
-.data-view .ui-dataview-item div:first-of-type {
+.nome {
     font-size: 22px;
     color: #007bff;
     font-weight: bold;
-    margin-top: 5px;
 }
 
-/* Estilo do preço da variedade (segundo div dentro de cada item) */
-.data-view .ui-dataview-item div:nth-of-type(2) {
+.preco {
     font-size: 20px;
-    color: black;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.data-view .ui-dataview-item .details .price {
     color: green;
 }
-/* FIM DATA VIEW */
+
+.carousel-container .ui-carousel-prev,
+.carousel-container .ui-carousel-next {
+    opacity: 1 !important;
+    visibility: visible !important;
+    background-color: #007bff !important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 20px !important;
+}
+
+.carousel-container .ui-carousel-prev:hover,
+.ui-carousel .ui-carousel-next:hover {
+    background-color: #0056b3 !important;
+}
+
+.carousel-container .ui-carousel-pagination {
+    display: none !important;
+}
+/*  */
 
 /* RESPONSIVIDADE */
-@media (max-width: 1450px) {
-    .data-view .ui-dataview-item img {
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 420px;
+
+@media (max-width: 900px) {
+    .section-mesa {
+        margin-top: 60px;
     }
 }
 
-@media (max-width: 1330px) {
-    .data-view .ui-dataview-item img {
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 400px;
+@media (max-width: 580px) {
+    .carousel-container .ui-carousel-item img {
+        width: 250px;
+    }
+
+    .carousel-container .ui-carousel-prev,
+    .carousel-container .ui-carousel-next {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .nome {
+        font-size: 18px;
+    }
+
+    .preco {
+        font-size: 16px;
     }
 }
 
-@media (max-width: 1270px) {
-    .data-view .ui-dataview-item img {
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 370px;
+@media (max-width: 420px) {
+    .carousel-container .ui-carousel-item img {
+        width: 200px;
+    }
+
+    .nome {
+        font-size: 16px;
+    }
+
+    .preco {
+        font-size: 14px;
+    }
+
+    .fundo-contato-h2 {
+        font-size: 16px;
     }
 }
 
-@media (max-width: 1280px) {
-    .data-view .ui-dataview-item img {
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 350px;
+@media (max-width: 360px) {
+    .carousel-container .ui-carousel-item img {
+        width: 200px;
+    }
+
+    .carousel-container .ui-carousel-prev,
+    .carousel-container .ui-carousel-next {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .nome {
+        font-size: 14px;
+    }
+
+    .preco {
+        font-size: 12px;
     }
 }
 
-@media (max-width: 1120px) {
-    .data-view .ui-dataview-item img {
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 330px;
-    }
-}
-
-@media (max-width: 1060px) {
-    .data-view .ui-dataview-item img {
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 310px;
-    }
-}
-
-@media (max-width: 990px) {
-    .data-view {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 36%;
-        margin-left: auto;
-        margin-right: auto;
+@media (max-width: 350px) {
+    .carousel-container .ui-carousel-item img {
+        width: 170px;
     }
 
-    .data-view .ui-dataview-item img {
-        max-width: 200%;
-        height: auto;
-        display: block;
-        margin-bottom: 10px;
+    .carousel-container .ui-carousel-prev,
+    .carousel-container .ui-carousel-next {
+        width: 25px !important;
+        height: 25px !important;
     }
 
-    .data-view .ui-dataview-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 25px;
-        width: 100%;
+    .nome {
+        font-size: 14px;
     }
 
-    .data-view .ui-dataview-item .details {
-        text-align: center;
-        width: 100%;
-    }
-
-    .data-view .ui-dataview-item .details .price {
-        color: green;
-        border-bottom: 2.1px dashed #000;
-        padding-bottom: 6px;
+    .preco {
+        font-size: 12px;
     }
 }

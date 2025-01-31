@@ -20,8 +20,8 @@ public class CadeirasBean implements Serializable {
 
     public CadeirasBean() {
         cadeiras = new ArrayList<>();
-        cadeiras.add(new Cadeiras("Cadeira de tirar botas", "1cadeira_de_tirar_botas.png", 200));
-        cadeiras.add(new Cadeiras("Cadeira pavão", "2cadeira_pavao.png", 200));
+        cadeiras.add(new Cadeiras("Cadeira tirar botas", "1cadeira_de_tirar_botas.png", 1750.00));
+        cadeiras.add(new Cadeiras("Cadeira pavão", "2cadeira_pavao.png", 860.00));
 
         responsiveOptions = new ArrayList<>();
         responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));

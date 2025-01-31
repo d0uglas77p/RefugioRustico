@@ -20,10 +20,10 @@ public class MesasBean implements Serializable {
 
     public MesasBean() {
         mesas = new ArrayList<>();
-        mesas.add(new Mesas("Mesa de Chipandelle", "1mesa_de_chipandelle.png", 200));
-        mesas.add(new Mesas("Mesa", "2mesa.png", 200));
-        mesas.add(new Mesas("Mesa Redonda", "3mesa_redonda.png", 200));
-        mesas.add(new Mesas("Mesa Pé X", "4mesa_pe_x.png", 200));
+        mesas.add(new Mesas("Mesa de Chipandelle", "1mesa_de_chipandelle.png", 2850.00));
+        mesas.add(new Mesas("Mesa", "2mesa.png", 2560.00));
+        mesas.add(new Mesas("Mesa Redonda", "3mesa_redonda.png", 3050.00));
+        mesas.add(new Mesas("Mesa Pé X", "4mesa_pe_x.png", 2700.00));
 
         responsiveOptions = new ArrayList<>();
         responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));

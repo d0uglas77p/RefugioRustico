@@ -20,10 +20,10 @@ public class CristaleirasBean implements Serializable {
 
     public CristaleirasBean() {
         cristaleiras = new ArrayList<>();
-        cristaleiras.add(new Cristaleiras("Cristaleira", "1cristaleira.png", 200));
-        cristaleiras.add(new Cristaleiras("Cristaleira com pintura", "2cristaleira_com_pintura.png", 200));
-        cristaleiras.add(new Cristaleiras("Cristaleira", "3cristaleira.png", 200));
-        cristaleiras.add(new Cristaleiras("Cristaleira com pintura", "4cristaleira_com_pintura.png", 200));
+        cristaleiras.add(new Cristaleiras("Cristaleira", "1cristaleira.png", 2500.00));
+        cristaleiras.add(new Cristaleiras("Cristaleira com pintura", "2cristaleira_com_pintura.png", 2160.00));
+        cristaleiras.add(new Cristaleiras("Cristaleira", "3cristaleira.png", 2050.00));
+        cristaleiras.add(new Cristaleiras("Cristaleira com pintura", "4cristaleira_com_pintura.png", 2250.00));
 
         responsiveOptions = new ArrayList<>();
         responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));

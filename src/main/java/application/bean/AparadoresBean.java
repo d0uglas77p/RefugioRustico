@@ -20,9 +20,9 @@ public class AparadoresBean implements Serializable {
 
     public AparadoresBean() {
         aparadores = new ArrayList<>();
-        aparadores.add(new Aparadores("Aparador", "1aparador.png", 200));
-        aparadores.add(new Aparadores("Aparador", "2aparador_rustico_com_pintura.png", 200));
-        aparadores.add(new Aparadores("Aparador com pintura", "3aparador_com_pintura.png", 200));
+        aparadores.add(new Aparadores("Aparador", "1aparador.png", 600.00));
+        aparadores.add(new Aparadores("Aparador", "2aparador_rustico_com_pintura.png", 1800.00));
+        aparadores.add(new Aparadores("Aparador com pintura", "3aparador_com_pintura.png", 740.00));
 
         responsiveOptions = new ArrayList<>();
         responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));

@@ -20,12 +20,12 @@ public class VariedadesBean implements Serializable {
 
     public VariedadesBean() {
         variedades = new ArrayList<>();
-        variedades.add(new Variedades("Arcais com pintura", "1arcais_com_pintura.png", 200));
-        variedades.add(new Variedades("Mesinha de jardim", "2mesinha_de_jardim.png", 200));
-        variedades.add(new Variedades("Armario com palinha", "3armario_com_palinha.png", 200));
-        variedades.add(new Variedades("Cama", "4cama.png", 200));
-        variedades.add(new Variedades("Adega ripada", "5adega_ripada.png", 200));
-        variedades.add(new Variedades("Arcais com pintura", "6arcais_com_pintura.png", 200));
+        variedades.add(new Variedades("Arcais com pintura", "1arcais_com_pintura.png", 3200.00));
+        variedades.add(new Variedades("Mesinha de jardim", "2mesinha_de_jardim.png", 380.00));
+        variedades.add(new Variedades("Armario com palinha", "3armario_com_palinha.png", 2680.00));
+        variedades.add(new Variedades("Cama", "4cama.png", 3470.00));
+        variedades.add(new Variedades("Adega ripada", "5adega_ripada.png", 940.00));
+        variedades.add(new Variedades("Arcais com pintura", "6arcais_com_pintura.png", 3150.00));
 
         responsiveOptions = new ArrayList<>();
         responsiveOptions.add(new ResponsiveOption("1150px", 1, 1));

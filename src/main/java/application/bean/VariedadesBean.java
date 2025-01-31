@@ -28,8 +28,7 @@ public class VariedadesBean implements Serializable {
         variedades.add(new Variedades("Arcais com pintura", "6arcais_com_pintura.png", 200));
 
         responsiveOptions = new ArrayList<>();
-        responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));
-        responsiveOptions.add(new ResponsiveOption("970px", 1, 1));
+        responsiveOptions.add(new ResponsiveOption("1150px", 1, 1));
     }
 
     public List<Variedades> getVariedades() {

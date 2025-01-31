@@ -113,31 +113,31 @@
 
         <!-- BANCOS -->
         <section>
-            <div class="section-mesa">
+            <div class="section-banco">
                 <div>
-                    <div class="fundo-titulo">
+                    <div class="fundo-titulo-banco">
                         <h2>BANCOS</h2>
                     </div>
                 </div>
 
                 <div>
-                    <div class="div-conteiner-carousel">
+                    <div class="div-conteiner-carousel-banco">
                         <p:carousel id="bancosCarousel" value="#{bancosBean.bancos}" var="banco"
-                                    numVisible="3" navigator="true" showIndicators="false" circular="true"
-                                    class="carousel-container" responsiveOptions="#{bancosBean.responsiveOptions}">
+                                    numVisible="2" navigator="true" showIndicators="false" circular="true"
+                                    class="carousel-container-banco" responsiveOptions="#{bancosBean.responsiveOptions}">
 
-                            <div class="div-produto">
+                            <div class="div-produto-banco">
                                 <div>
                                     <p:graphicImage name="catalogo/bancos/#{banco.imagem}" library="images"
                                                     alt="#{banco.nome}" title="#{banco.nome}"
                                                     onclick="openFullscreen(this)" style="cursor: pointer;" />
                                 </div>
 
-                                <div class="div-descricao">
-                                    <h:outputText value="#{banco.nome}" class="nome"/>
+                                <div class="div-descricao-banco">
+                                    <h:outputText value="#{banco.nome}" class="nome-banco"/>
                                 </div>
-                                <div class="div-descricao">
-                                    <h:outputText value="R$ #{banco.preco}" class="preco"/>
+                                <div class="div-descricao-banco">
+                                    <h:outputText value="R$ #{banco.preco}" class="preco-banco"/>
                                 </div>
                             </div>
                         </p:carousel>
@@ -257,31 +257,31 @@
 
         <!-- VARIEDADES -->
         <section>
-            <div class="section-mesa">
+            <div class="section-variedades">
                 <div>
-                    <div class="fundo-titulo">
+                    <div class="fundo-titulo-variedades">
                         <h2>VARIEDADES</h2>
                     </div>
                 </div>
 
                 <div>
-                    <div class="div-conteiner-carousel">
+                    <div class="div-conteiner-carousel-variedades">
                         <p:carousel id="variedadesCarousel" value="#{variedadesBean.variedades}" var="variedade"
-                                    numVisible="3" navigator="true" showIndicators="false" circular="true"
-                                    class="carousel-container" responsiveOptions="#{variedadesBean.responsiveOptions}">
+                                    numVisible="2" navigator="true" showIndicators="false" circular="true"
+                                    class="carousel-container-variedades" responsiveOptions="#{variedadesBean.responsiveOptions}">
 
-                            <div class="div-produto">
+                            <div class="div-produto-variedades">
                                 <div>
                                     <p:graphicImage name="catalogo/variedades/#{variedade.imagem}" library="images"
                                                     alt="#{variedade.nome}" title="#{variedade.nome}"
                                                     onclick="openFullscreen(this)" style="cursor: pointer;" />
                                 </div>
 
-                                <div class="div-descricao">
-                                    <h:outputText value="#{variedade.nome}" class="nome"/>
+                                <div class="div-descricao-variedades">
+                                    <h:outputText value="#{variedade.nome}" class="nome-variedades"/>
                                 </div>
-                                <div class="div-descricao">
-                                    <h:outputText value="R$ #{variedade.preco}" class="preco"/>
+                                <div class="div-descricao-variedades">
+                                    <h:outputText value="R$ #{variedade.preco}" class="preco-variedades"/>
                                 </div>
                             </div>
                         </p:carousel>

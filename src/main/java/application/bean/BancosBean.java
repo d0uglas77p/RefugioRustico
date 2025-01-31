@@ -20,15 +20,14 @@ public class BancosBean implements Serializable {
 
     public BancosBean() {
         bancos = new ArrayList<>();
-        bancos.add(new Bancos("Jogo de banco ipê", "1jogo_de_banco_ipe.png", 200));
         bancos.add(new Bancos("Banco", "2banco.png", 200));
         bancos.add(new Bancos("Banco de jardim", "3banco_de_jardim.png", 200));
         bancos.add(new Bancos("Jogo de banco", "4jogo_de_banco.png", 200));
+        bancos.add(new Bancos("Jogo de banco ipê", "1jogo_de_banco_ipe.png", 200));
         bancos.add(new Bancos("Banco de jardim", "5banco_de_jardim.png", 200));
 
         responsiveOptions = new ArrayList<>();
-        responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));
-        responsiveOptions.add(new ResponsiveOption("970px", 1, 1));
+        responsiveOptions.add(new ResponsiveOption("1355px", 1, 1));
     }
 
     public List<Bancos> getBancos() {

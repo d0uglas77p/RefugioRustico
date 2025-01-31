@@ -29,7 +29,6 @@ function openFullscreen(img) {
     fullImg.src = img.src;
     fullImg.style.maxWidth = "90%";
     fullImg.style.maxHeight = "90%";
-    fullImg.style.borderRadius = "10px";
     fullImg.style.boxShadow = "0 0 20px rgba(255, 255, 255, 0.5)";
 
     fullscreenDiv.appendChild(fullImg);

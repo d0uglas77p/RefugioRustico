@@ -12,6 +12,7 @@ import java.util.List;
 @ManagedBean(name = "mesasBean")
 @ViewScoped
 public class MesasBean implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     private List<Mesas> mesas;

@@ -1,6 +1,7 @@
 package application.bean;
 
 import application.model.Cristaleiras;
+import org.primefaces.model.ResponsiveOption;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.view.ViewScoped;
@@ -14,21 +15,34 @@ public class CristaleirasBean implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private List<Cristaleiras> cristaleira;
+    private List<Cristaleiras> cristaleiras;
+    private List<ResponsiveOption> responsiveOptions;
 
     public CristaleirasBean() {
-        cristaleira = new ArrayList<>();
-        cristaleira.add(new Cristaleiras("Cristaleira", "1cristaleira.png", 200));
-        cristaleira.add(new Cristaleiras("Cristaleira com pintura", "2cristaleira_com_pintura.png", 200));
-        cristaleira.add(new Cristaleiras("Cristaleira", "3cristaleira.png", 200));
-        cristaleira.add(new Cristaleiras("Cristaleira com pintura", "4cristaleira_com_pintura.png", 200));
+        cristaleiras = new ArrayList<>();
+        cristaleiras.add(new Cristaleiras("Cristaleira", "1cristaleira.png", 200));
+        cristaleiras.add(new Cristaleiras("Cristaleira com pintura", "2cristaleira_com_pintura.png", 200));
+        cristaleiras.add(new Cristaleiras("Cristaleira", "3cristaleira.png", 200));
+        cristaleiras.add(new Cristaleiras("Cristaleira com pintura", "4cristaleira_com_pintura.png", 200));
+
+        responsiveOptions = new ArrayList<>();
+        responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));
+        responsiveOptions.add(new ResponsiveOption("970px", 1, 1));
     }
 
-    public List<Cristaleiras> getCristaleira() {
-        return cristaleira;
+    public List<Cristaleiras> getCristaleiras() {
+        return cristaleiras;
     }
 
-    public void setCristaleira(List<Cristaleiras> cristaleira) {
-        this.cristaleira = cristaleira;
+    public void setCristaleiras(List<Cristaleiras> cristaleiras) {
+        this.cristaleiras = cristaleiras;
+    }
+
+    public List<ResponsiveOption> getResponsiveOptions() {
+        return responsiveOptions;
+    }
+
+    public void setResponsiveOptions(List<ResponsiveOption> responsiveOptions) {
+        this.responsiveOptions = responsiveOptions;
     }
 }

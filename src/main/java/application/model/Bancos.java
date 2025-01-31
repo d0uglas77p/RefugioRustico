@@ -11,30 +11,30 @@ public class Bancos implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String name;
-    private String imageName;
+    private String nome;
+    private String imagem;
     private double preco;
 
-    public Bancos(String name, String imageName, double preco) {
-        this.name = name;
-        this.imageName = imageName;
+    public Bancos(String nome, String imagem, double preco) {
+        this.nome = nome;
+        this.imagem = imagem;
         this.preco = preco;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getImageName() {
-        return imageName;
+    public String getImagem() {
+        return imagem;
     }
 
-    public void setImageName(String imageName) {
-        this.imageName = imageName;
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 
     public String getPreco() {

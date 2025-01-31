@@ -1,6 +1,7 @@
 package application.bean;
 
 import application.model.Cadeiras;
+import org.primefaces.model.ResponsiveOption;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.view.ViewScoped;
@@ -14,19 +15,32 @@ public class CadeirasBean implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private List<Cadeiras> cadeira;
+    private List<Cadeiras> cadeiras;
+    private List<ResponsiveOption> responsiveOptions;
 
     public CadeirasBean() {
-        cadeira = new ArrayList<>();
-        cadeira.add(new Cadeiras("Cadeira de tirar botas", "1cadeira_de_tirar_botas.png", 200));
-        cadeira.add(new Cadeiras("Cadeira pavão", "2cadeira_pavao.png", 200));
+        cadeiras = new ArrayList<>();
+        cadeiras.add(new Cadeiras("Cadeira de tirar botas", "1cadeira_de_tirar_botas.png", 200));
+        cadeiras.add(new Cadeiras("Cadeira pavão", "2cadeira_pavao.png", 200));
+
+        responsiveOptions = new ArrayList<>();
+        responsiveOptions.add(new ResponsiveOption("1360px", 2, 2));
+        responsiveOptions.add(new ResponsiveOption("970px", 1, 1));
     }
 
-    public List<Cadeiras> getCadeira() {
-        return cadeira;
+    public List<Cadeiras> getCadeiras() {
+        return cadeiras;
     }
 
-    public void setCadeiras(List<Cadeiras> cadeira) {
-        this.cadeira = cadeira;
+    public void setCadeiras(List<Cadeiras> cadeiras) {
+        this.cadeiras = cadeiras;
+    }
+
+    public List<ResponsiveOption> getResponsiveOptions() {
+        return responsiveOptions;
+    }
+
+    public void setResponsiveOptions(List<ResponsiveOption> responsiveOptions) {
+        this.responsiveOptions = responsiveOptions;
     }
 }
